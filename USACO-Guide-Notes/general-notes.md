@@ -41,9 +41,9 @@ char --> 1 byte, any character on ASCII
 		`pw.print("The sum of these three numbers is ");`
 		`pw.println(a + b + c);`
 
-		 * flushes and closes the output stream.
-		pw.close();
-	}
+		`* flushes and closes the output stream.`
+		`pw.close();`
+	`}`
 `}`
 
 [Debugging & Troubleshooting](https://usaco.guide/general/debugging-checklist?lang=java#wrong-answer-or-runtime-error)
