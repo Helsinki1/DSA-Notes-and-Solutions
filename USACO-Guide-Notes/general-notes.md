@@ -32,18 +32,33 @@ char --> 1 byte, any character on ASCII
 `import java.util.StringTokenizer;`
 `public class Main {`
 	`public static void main(String[] args) throws IOException {`
-		`BufferedReader r = new BufferedReader(new InputStreamReader(System.in));`
-		`PrintWriter pw = new PrintWriter(System.out);`
+		`BufferedReader r = new BufferedReader(new FileReader(NAME.in));`
+		`PrintWriter pw = new PrintWriter(NAME.out);`
 		`StringTokenizer st = new StringTokenizer(r.readLine());`
 		`int a = Integer.parseInt(st.nextToken());`
 		`int b = Integer.parseInt(st.nextToken());`
 		`int c = Integer.parseInt(st.nextToken());`
 		`pw.print("The sum of these three numbers is ");`
 		`pw.println(a + b + c);`
-
-		* flushes and closes the output stream.
-		pw.close();
-	}
+		 `* flushes and closes the output stream.`
+		`pw.close();`
+	`}`
+`}`
+**Input & Output (Java Ex3, preferred)**
+`import java.io.*;`
+`public class Main {`
+	`public static void main(String[] args) throws IOException {`
+		`BufferedReader r = new BufferedReader(new FileReader(NAME.in));`
+		`PrintWriter pw = new PrintWriter(NAME.out);`
+		`String [] line = (r.readline()).split(" ");`
+		`int a = Integer.parseInt(line[0]);`
+		`int b = Integer.parseInt(line[1]);`
+		`int c = Integer.parseInt(line[2]);`
+		`pw.print("The sum of these three numbers is ");`
+		`pw.println(a + b + c);`
+		`* flushes and closes the output stream.`
+		`pw.close();`
+	`}`
 `}`
 
 [Debugging & Troubleshooting](https://usaco.guide/general/debugging-checklist?lang=java#wrong-answer-or-runtime-error)
