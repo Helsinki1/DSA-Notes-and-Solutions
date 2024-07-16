@@ -40,7 +40,7 @@ char --> 1 byte, any character on ASCII
 		`int c = Integer.parseInt(st.nextToken());`
 		`pw.print("The sum of these three numbers is ");`
 		`pw.println(a + b + c);`
-		 `* flushes and closes the output stream.`
+		 `// flushes and closes the output stream.`
 		`pw.close();`
 	`}`
 `}`
@@ -56,7 +56,7 @@ char --> 1 byte, any character on ASCII
 		`int c = Integer.parseInt(line[2]);`
 		`pw.print("The sum of these three numbers is ");`
 		`pw.println(a + b + c);`
-		`* flushes and closes the output stream.`
+		`// flushes and closes the output stream.`
 		`pw.close();`
 	`}`
 `}`
