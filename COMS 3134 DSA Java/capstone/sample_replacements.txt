@@ -1,0 +1,5 @@
+spider -> wonder
+man -> woman
+girl -> person
+Girl -> person
+person -> woman
