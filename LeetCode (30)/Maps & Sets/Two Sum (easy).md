@@ -25,7 +25,9 @@ class Solution {
         int[] out = {sorted[start][1], sorted[end][1]};
         return out;
     }
-}```
+}
+```
+
 Useful method I learned:  `Arrays.sort(array, Comparator.comparingInt(row -> row[0]));`
 - This allows me to sort a 2D array with respect to integers from only one specified column
 
@@ -35,6 +37,7 @@ However, this solution's complexity was O(n * log(n)) instead of O(n).
 As I read other solutions, I see that there is no trick at all involving 2 pointers... This really is purely a map/table problem... Improvements in time complexity mainly come from:
 - Using a hash table instead of a sorted array
 	- `hashTable.get(key)` & `hashTable.containsKey(key)` are both O(1) complexity, both simply input a key and calculates the hash index and fetches the value / checks for a collision
+
 ```java
 class Solution {
     public int[] twoSum(int[] nums, int target) {
