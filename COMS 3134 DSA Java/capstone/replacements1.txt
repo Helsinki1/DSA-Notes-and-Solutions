@@ -1,8 +1,0 @@
-Alice -> Bob
-Carl -> Bob
-Justin -> Alex
-Freakbob -> Freakton
-Peter -> Alice
-Bob -> Billy
-Billy -> Flowers
-Flowers -> Freakbob
